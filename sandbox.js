@@ -1,7 +1,5 @@
 var character = "Sasan";
-console.log(character);
-var inputs = document.querySelectorAll('input');
-console.log(inputs);
-inputs.forEach(function (input) {
-    console.log(input);
-});
+var age = 20;
+var isBlackBelt = false;
+//character = 20;
+character = "Ashkan";

@@ -1,11 +1,6 @@
-const character = "Sasan";
+let character = "Sasan";
+let age = 20;
+let isBlackBelt = false;
 
-console.log(character);
-
-const inputs = document.querySelectorAll('input');
-
-console.log(inputs);
-
-inputs.forEach(input =>{
-    console.log(input);
-})
+//character = 20;
+character = "Ashkan";
