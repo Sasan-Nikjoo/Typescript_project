@@ -34,19 +34,27 @@
 //class
 
 class Invoice {
-    client: string;
-    details: string;
-    amount: number;
+    // client: string;
+    // details: string;
+    // amount: number;
 
 
-    constructor(c: string, d:string, a: number){
-        this.amount = a;
-        this.client = c;
-        this.details = d;
-    }
+    // constructor(c: string, d:string, a: number){
+    //     this.amount = a;
+    //     this.client = c;
+    //     this.details = d;
+    // }
+
+
+    //this kind of costructor can be used
+    constructor(
+        readonly client : string,
+        private details : string,
+        public amount : number,
+    ){}
 
     format(){
-        console.log('the user called ${this.client} ows ${this.amount} for ${this.details}')
+        console.log(`the user called ${this.client} ows ${this.amount} for ${this.details}`)
     }
 }
 

@@ -20,13 +20,22 @@
 //------------------------------------------------------------------
 //class
 var Invoice = /** @class */ (function () {
-    function Invoice(c, d, a) {
-        this.amount = a;
-        this.client = c;
-        this.details = d;
+    // client: string;
+    // details: string;
+    // amount: number;
+    // constructor(c: string, d:string, a: number){
+    //     this.amount = a;
+    //     this.client = c;
+    //     this.details = d;
+    // }
+    //this kind of costructor can be used
+    function Invoice(client, details, amount) {
+        this.client = client;
+        this.details = details;
+        this.amount = amount;
     }
     Invoice.prototype.format = function () {
-        console.log('the user called ${this.client} ows ${this.amount} for ${this.details}');
+        console.log("the user called ".concat(this.client, " ows ").concat(this.amount, " for ").concat(this.details));
     };
     return Invoice;
 }());
